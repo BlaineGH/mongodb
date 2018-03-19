@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Bat</title>
+</head>
+<body>
+	<div>
+		<h1>Rename <%= animal[0].name %></h1>
+		<form action="/update/<%= animal[0]._id %>" method="post">
+			<input type="text" name="newname" placeholder="Name">
+			<input type="submit" value="Rename">	
+		</form>
+	</div>
+
+</body>
+</html>

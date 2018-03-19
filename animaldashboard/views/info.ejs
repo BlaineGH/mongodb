@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bat info</title>
+</head>
+<body>
+	<div>
+		<h1>Description</h1>
+		<p><%= animal[0].name %></p>
+		<hr>
+		<a href="/animals/editinfo/<%= animal[0]._id %>"><button>Edit</button></a> | 
+		<a href="/delete/<%= animal[0]._id %>"><button>Delete</button></a> | 
+		<a href="/"><button>Home</button></a>
+	</div>
+
+</body>
+</html>

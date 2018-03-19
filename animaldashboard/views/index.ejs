@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bats</title>
+</head>
+<body>
+	<div>
+		<h1>All the bats!</h1>
+		<% if(typeof(errors) != "undefined") { %>
+			<% for (let i in errors) { %>
+				<h3>%= errors[i].message %></h3>
+			<% } %>
+		<% } %>
+		<% for (let i in animals) { %>
+			<p><a href="/animals/<%= animals[i]._id %>"><%= animals[i].name %></a></p>
+			
+			<hr>
+		<% } %>
+		<a href="/new"><button>Add Another</button></a>
+	</div>
+
+</body>
+</html>

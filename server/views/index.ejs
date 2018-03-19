@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic form</title>
+</head>
+<body>
+	<div>
+		<form action="/users" method="post">
+			<h1>form</h1>
+			Name: <input type="text" name="name">
+			Age: <input type="text" name="age">
+			<input type="submit">
+		</form>
+		<div>
+			<table>
+				<% for (let i in users) { %>
+				<tr>
+					<td><%= users[i].name %></td>
+					<td><%= users[i].age %></td>
+				</tr>
+				<% } %>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
